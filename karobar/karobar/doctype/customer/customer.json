@@ -1,0 +1,222 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:customer_name",
+ "creation": "2024-02-26 11:34:44.512193",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_information_section",
+  "customer_name",
+  "credit_limit",
+  "contact_person",
+  "description",
+  "column_break_lrfz",
+  "customer_type",
+  "address",
+  "customer_code",
+  "attachments",
+  "has_default_due_date_days",
+  "column_break_tbuy",
+  "customer_group",
+  "price_list",
+  "status",
+  "section_break_mcby",
+  "contacts",
+  "email",
+  "contact_details_tab",
+  "address_and_contact_section",
+  "address_html",
+  "column_break_zrov",
+  "contact_html",
+  "primary_address_and_contact_section",
+  "customer_primary_address",
+  "column_break_ulna",
+  "customer_primary_contact",
+  "email_id",
+  "mobile_no"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Customer Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "customer_type",
+   "fieldtype": "Data",
+   "label": "Customer Type"
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Select",
+   "label": "Customer Group",
+   "options": "Walking\nindividual\nParty\nShop Keeper\nWholesale"
+  },
+  {
+   "fieldname": "column_break_lrfz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tbuy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Link",
+   "label": "Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "section_break_mcby",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "contacts",
+   "fieldtype": "Table",
+   "label": "Contacts",
+   "options": "Contact Phone"
+  },
+  {
+   "fieldname": "price_list",
+   "fieldtype": "Data",
+   "label": "Price List"
+  },
+  {
+   "fieldname": "credit_limit",
+   "fieldtype": "Data",
+   "label": "Credit Limit"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Table",
+   "label": "Email",
+   "options": "Contact Email"
+  },
+  {
+   "fieldname": "customer_information_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Information"
+  },
+  {
+   "fieldname": "contact_details_tab",
+   "fieldtype": "Tab Break",
+   "label": "Contact Details"
+  },
+  {
+   "fieldname": "address_and_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Address end Contact"
+  },
+  {
+   "depends_on": "eval: !doc.__islocal",
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "label": "Address HTML"
+  },
+  {
+   "fieldname": "column_break_zrov",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_html",
+   "fieldtype": "HTML",
+   "label": "Contact HTML",
+   "mandatory_depends_on": "eval: !doc.__islocal"
+  },
+  {
+   "fieldname": "primary_address_and_contact_section",
+   "fieldtype": "Section Break",
+   "label": "Primary Address and Contact"
+  },
+  {
+   "fieldname": "customer_primary_address",
+   "fieldtype": "Data",
+   "label": "Customer Primary Address"
+  },
+  {
+   "fieldname": "column_break_ulna",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_primary_contact",
+   "fieldtype": "Data",
+   "label": "Customer Primary Contact"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Read Only",
+   "label": "Email Id"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Read Only",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Link",
+   "label": "Contact Person",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "customer_code",
+   "fieldtype": "Data",
+   "label": "Customer Code"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nActive\ninactive"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Attach",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "has_default_due_date_days",
+   "fieldtype": "Duration",
+   "label": "Has Default Due Date Days"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-26 13:27:25.263557",
+ "modified_by": "Administrator",
+ "module": "Karobar",
+ "name": "Customer",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "customer_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "customer_name"
+}

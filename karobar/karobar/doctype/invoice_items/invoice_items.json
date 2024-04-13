@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-28 10:13:53.929167",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_sakv",
+  "item_name",
+  "qty_in_box",
+  "box_quantity",
+  "lose",
+  "total_pieces",
+  "meterpiece",
+  "meter",
+  "rate",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "lose",
+   "fieldtype": "Data",
+   "label": "Lose"
+  },
+  {
+   "fieldname": "total_pieces",
+   "fieldtype": "Int",
+   "label": "Total Pieces"
+  },
+  {
+   "fieldname": "meterpiece",
+   "fieldtype": "Float",
+   "label": "Meter/Piece"
+  },
+  {
+   "fieldname": "meter",
+   "fieldtype": "Int",
+   "label": "Meter"
+  },
+  {
+   "default": "0",
+   "fetch_from": "item_name.sales_price",
+   "fieldname": "rate",
+   "fieldtype": "Int",
+   "label": "Rate",
+   "non_negative": 1,
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "columns": 5,
+   "fieldname": "column_break_sakv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qty_in_box",
+   "fieldtype": "Int",
+   "label": "Qty In Box",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "box_quantity",
+   "fieldtype": "Data",
+   "label": "Box Qty",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-28 16:10:32.603150",
+ "modified_by": "Administrator",
+ "module": "Karobar",
+ "name": "Invoice Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:from_account",
+ "creation": "2024-02-27 11:52:43.975682",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "account_transfer_section",
+  "date",
+  "reference",
+  "description",
+  "column_break_wkjx",
+  "from_account",
+  "to_account",
+  "credit_amount",
+  "debit_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "account_transfer_section",
+   "fieldtype": "Section Break",
+   "label": "Account Transfer"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "credit_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Credit Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "debit_amount",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Debit Amount",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_wkjx",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_account",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "From Account",
+   "options": "Chart of Account",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "to_account",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "To Account",
+   "options": "Chart of Account",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-27 13:09:34.505449",
+ "modified_by": "Administrator",
+ "module": "Karobar",
+ "name": "Inter Account Transfer",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

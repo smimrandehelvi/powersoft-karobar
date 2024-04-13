@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-28 10:08:08.365435",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_information_section",
+  "customer_name",
+  "column_break_bamw",
+  "date",
+  "serial_no",
+  "invoice_section",
+  "invoice_items",
+  "section_break_vgdn",
+  "total",
+  "previous_balance",
+  "received_amount",
+  "discount",
+  "net_amount",
+  "received",
+  "balance",
+  "mop"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_information_section",
+   "fieldtype": "Section Break",
+   "label": "Customer Information"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "options": "Customer",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_bamw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "invoice_section",
+   "fieldtype": "Section Break",
+   "label": "Invoice"
+  },
+  {
+   "columns": 8,
+   "fieldname": "invoice_items",
+   "fieldtype": "Table",
+   "label": "Invoice Items",
+   "options": "Invoice Items"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "Serial No"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Data",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Data",
+   "label": "Discount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_amount",
+   "fieldtype": "Data",
+   "label": "Net Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "received",
+   "fieldtype": "Data",
+   "label": "Received",
+   "read_only": 1
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Data",
+   "label": "Balance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_vgdn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "received_amount",
+   "fieldtype": "Data",
+   "label": "Received Amount"
+  },
+  {
+   "fieldname": "previous_balance",
+   "fieldtype": "Data",
+   "label": "Previous Balance"
+  },
+  {
+   "default": "Cash",
+   "fieldname": "mop",
+   "fieldtype": "Select",
+   "label": "Mode Off Payments",
+   "options": "Cash\nCheque\nOnline\nCredit Card\nInter Bank",
+   "sort_options": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-02-28 12:01:41.006302",
+ "modified_by": "Administrator",
+ "module": "Karobar",
+ "name": "Sales Invoice",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

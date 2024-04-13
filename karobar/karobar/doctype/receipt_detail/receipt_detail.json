@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-26 13:11:47.043952",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "items_detail_section",
+  "item_description",
+  "quantity",
+  "sales_unit_price",
+  "amount",
+  "discount_percent",
+  "discount_amount",
+  "total_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "items_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Items Detail"
+  },
+  {
+   "fieldname": "item_description",
+   "fieldtype": "Data",
+   "label": "Item Description"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "sales_unit_price",
+   "fieldtype": "Float",
+   "label": "Sales Unit Price"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Float",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "discount_percent",
+   "fieldtype": "Float",
+   "label": "Discount Percent"
+  },
+  {
+   "fieldname": "discount_amount",
+   "fieldtype": "Float",
+   "label": "Discount Amount"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Float",
+   "label": "Total Amount"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-26 13:20:53.177005",
+ "modified_by": "Administrator",
+ "module": "Karobar",
+ "name": "Receipt Detail",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
