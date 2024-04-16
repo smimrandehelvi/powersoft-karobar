@@ -1,15 +1,16 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:INV-{MM}{YY}-{#####}",
  "creation": "2024-02-28 10:08:08.365435",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "customer_information_section",
-  "customer_name",
-  "column_break_bamw",
   "date",
   "serial_no",
+  "column_break_bamw",
+  "customer_name",
   "invoice_section",
   "invoice_items",
   "section_break_vgdn",
@@ -51,7 +52,7 @@
    "label": "Invoice"
   },
   {
-   "columns": 8,
+   "columns": 10,
    "fieldname": "invoice_items",
    "fieldtype": "Table",
    "label": "Invoice Items",
@@ -117,10 +118,11 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-28 12:01:41.006302",
+ "modified": "2024-04-17 01:25:00.610393",
  "modified_by": "Administrator",
  "module": "Karobar",
  "name": "Sales Invoice",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

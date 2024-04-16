@@ -51,7 +51,7 @@
    "default": "0",
    "fetch_from": "item_name.sales_price",
    "fieldname": "rate",
-   "fieldtype": "Int",
+   "fieldtype": "Float",
    "label": "Rate",
    "non_negative": 1,
    "options": "Item",
@@ -59,7 +59,7 @@
   },
   {
    "fieldname": "amount",
-   "fieldtype": "Currency",
+   "fieldtype": "Float",
    "label": "Amount"
   },
   {
@@ -84,7 +84,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-02-28 16:10:32.603150",
+ "modified": "2024-04-17 00:12:33.935146",
  "modified_by": "Administrator",
  "module": "Karobar",
  "name": "Invoice Items",

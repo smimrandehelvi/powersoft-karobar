@@ -26,10 +26,6 @@
   "contacts",
   "email",
   "contact_details_tab",
-  "address_and_contact_section",
-  "address_html",
-  "column_break_zrov",
-  "contact_html",
   "primary_address_and_contact_section",
   "customer_primary_address",
   "column_break_ulna",
@@ -109,27 +105,6 @@
    "label": "Contact Details"
   },
   {
-   "fieldname": "address_and_contact_section",
-   "fieldtype": "Section Break",
-   "label": "Address end Contact"
-  },
-  {
-   "depends_on": "eval: !doc.__islocal",
-   "fieldname": "address_html",
-   "fieldtype": "HTML",
-   "label": "Address HTML"
-  },
-  {
-   "fieldname": "column_break_zrov",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "contact_html",
-   "fieldtype": "HTML",
-   "label": "Contact HTML",
-   "mandatory_depends_on": "eval: !doc.__islocal"
-  },
-  {
    "fieldname": "primary_address_and_contact_section",
    "fieldtype": "Section Break",
    "label": "Primary Address and Contact"
@@ -160,9 +135,8 @@
   },
   {
    "fieldname": "contact_person",
-   "fieldtype": "Link",
-   "label": "Contact Person",
-   "options": "Contact"
+   "fieldtype": "Data",
+   "label": "Contact Person"
   },
   {
    "fieldname": "customer_code",
@@ -193,7 +167,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-02-26 13:27:25.263557",
+ "modified": "2024-04-16 20:10:49.277655",
  "modified_by": "Administrator",
  "module": "Karobar",
  "name": "Customer",
