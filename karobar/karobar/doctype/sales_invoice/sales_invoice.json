@@ -78,8 +78,7 @@
   {
    "fieldname": "net_amount",
    "fieldtype": "Data",
-   "label": "Net Amount",
-   "read_only": 1
+   "label": "Net Amount"
   },
   {
    "fieldname": "received",
@@ -118,7 +117,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-04-17 01:25:00.610393",
+ "modified": "2024-04-18 01:31:30.356559",
  "modified_by": "Administrator",
  "module": "Karobar",
  "name": "Sales Invoice",
